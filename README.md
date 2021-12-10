@@ -4,6 +4,7 @@ The following should work with fairseq's most up-to-date version in a google col
 
 ```python
 from fairseq.checkpoint_utils import load_model_ensemble_and_task_from_hf
+import IPython.display as ipd
 
 model_ensemble, cfg, task = load_model_ensemble_and_task_from_hf_hub(
     "facebook/fastspeech2-test", arg_overrides={"vocoder": "griffin_lim", "fp16": False}
@@ -30,8 +31,6 @@ sample = {
 generator = task.build_generator(model_ensemble, cfg)
 generation = generator.generate(model_ensemble[0], sample)
 waveform = generation[0]["waveform"]
-
-import IPython.display as ipd
 
 ipd.Audio(waveform, rate=task.sr)
 ```
