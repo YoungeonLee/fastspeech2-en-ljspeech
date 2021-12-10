@@ -7,7 +7,7 @@ from fairseq.checkpoint_utils import load_model_ensemble_and_task_from_hf
 import IPython.display as ipd
 
 model_ensemble, cfg, task = load_model_ensemble_and_task_from_hf_hub(
-    "facebook/fastspeech2-test", arg_overrides={"vocoder": "griffin_lim", "fp16": False}
+    "facebook/fastspeech2-en-ljspeech", arg_overrides={"vocoder": "griffin_lim", "fp16": False}
 )
 
 def tokenize(text):
