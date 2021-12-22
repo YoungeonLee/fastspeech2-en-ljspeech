@@ -3,8 +3,9 @@
 The following should work with fairseq's most up-to-date version in a google colab:
 
 ```python
-from fairseq.checkpoint_utils import load_model_ensemble_and_task_from_hf
+from fairseq.checkpoint_utils import load_model_ensemble_and_task_from_hf_hub
 import IPython.display as ipd
+import torch
 
 model_ensemble, cfg, task = load_model_ensemble_and_task_from_hf_hub(
     "facebook/fastspeech2-en-ljspeech", arg_overrides={"vocoder": "griffin_lim", "fp16": False}
