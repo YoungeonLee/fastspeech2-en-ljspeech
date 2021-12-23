@@ -1,5 +1,5 @@
 ---
-framework: fairseq
+library_name: fairseq
 task: text-to-speech
 tags:
 - fairseq
