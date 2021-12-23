@@ -28,7 +28,7 @@ def tokenize(text):
   tokenized = [{",": "sp", ";": "sp"}.get(p, p) for p in tokenized]
   return " ".join(p for p in tokenized if p.isalnum())
   
-text = "This is a cool demo for speech synthesis, don't you think so?"
+text = "Hello, this is a test run."
 
 tokenized = tokenize(text)
 sample = {
@@ -46,5 +46,3 @@ waveform = generation[0]["waveform"]
 
 ipd.Audio(waveform, rate=task.sr)
 ```
-
-See: https://colab.research.google.com/drive/1gvq4Y1urrg9QrQ9031sZIP93LKspIh_X?usp=sharing
