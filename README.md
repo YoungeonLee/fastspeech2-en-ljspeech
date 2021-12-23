@@ -1,3 +1,12 @@
+---
+tags:
+- fairseq
+- audio
+- text-to-speech
+language: en
+datasets:
+- ljspeech
+---
 ## Example to download fastspeech2 from fairseq
 
 The following should work with fairseq's most up-to-date version in a google colab:
