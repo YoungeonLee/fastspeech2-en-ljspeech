@@ -1,4 +1,6 @@
 ---
+framework: fairseq
+task: text-to-speech
 tags:
 - fairseq
 - audio
