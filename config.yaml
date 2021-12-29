@@ -25,6 +25,6 @@ vocab_filename: vocab.txt
 vocoder:
   type: hifigan
   config: hifigan.json
-  checkpoint: hifigan.pt
+  checkpoint: hifigan.bin
 inference:
   tokenization: g2p
