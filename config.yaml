@@ -22,3 +22,5 @@ transforms:
   '*':
   - global_cmvn
 vocab_filename: vocab.txt
+inference:
+  tokenization: g2p
