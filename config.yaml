@@ -22,5 +22,9 @@ transforms:
   '*':
   - global_cmvn
 vocab_filename: vocab.txt
+vocoder:
+  type: hifigan
+  config: hifigan.json
+  checkpoint: hifigan.pt
 inference:
   tokenization: g2p
