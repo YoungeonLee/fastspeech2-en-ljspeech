@@ -26,5 +26,5 @@ vocoder:
   type: hifigan
   config: hifigan.json
   checkpoint: hifigan.bin
-inference:
-  tokenization: g2p
+hub:
+  phonemizer: g2p
