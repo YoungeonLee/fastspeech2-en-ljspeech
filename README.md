@@ -11,7 +11,7 @@ datasets:
 ---
 # fastspeech2-en-ljspeech
 
-[FastSpeech 2](https://arxiv.org/abs/2006.04558) text-to-speech model from [fairseq S^2](https://arxiv.org/abs/2109.06912):
+[FastSpeech 2](https://arxiv.org/abs/2006.04558) text-to-speech model from fairseq S^2 ([paper](https://arxiv.org/abs/2109.06912)/[repo](https://github.com/pytorch/fairseq/tree/main/examples/speech_synthesis)):
 - English
 - Single-speaker female voice
 - Trained on [LJSpeech](https://keithito.com/LJ-Speech-Dataset/)
