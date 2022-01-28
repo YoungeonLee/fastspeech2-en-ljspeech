@@ -8,6 +8,9 @@ tags:
 language: en
 datasets:
 - ljspeech
+widget:
+- text: "Hello, this is a test run."
+  example_title: "Hello, this is a test run."
 ---
 # fastspeech2-en-ljspeech
 
